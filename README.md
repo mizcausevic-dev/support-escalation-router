@@ -40,7 +40,7 @@ flowchart LR
   F --> G
 ```
 
-Additional detail lives in [C:\Users\chaus\dev\repos\support-escalation-router\docs\architecture.md](/C:/Users/chaus/dev/repos/support-escalation-router/docs/architecture.md).
+Additional detail lives in [docs/architecture.md](./docs/architecture.md).
 
 ## API
 
@@ -108,7 +108,7 @@ Example payload:
 ## Local Run
 
 ```powershell
-Set-Location "C:\Users\chaus\dev\repos\support-escalation-router"
+cd support-escalation-router
 $env:Path = "$env:USERPROFILE\.cargo\bin;$env:Path"
 cargo run
 ```
@@ -128,7 +128,7 @@ cargo run
 ## Validation
 
 ```powershell
-Set-Location "C:\Users\chaus\dev\repos\support-escalation-router"
+cd support-escalation-router
 $env:Path = "$env:USERPROFILE\.cargo\bin;$env:Path"
 cargo test
 cargo build
